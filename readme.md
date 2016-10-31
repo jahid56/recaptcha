@@ -2,7 +2,7 @@
 
 This package relies on <a href="http://php.net/manual/en/book.image.php">php-gd</a> extension. So, make sure it is installed on your machine.
 
-# Installation
+# Installation Instruction
 
 Clone the repository-
 
