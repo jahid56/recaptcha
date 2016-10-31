@@ -1,6 +1,6 @@
 # This package is compatible with Laravel 5.3
 
-This package relies on <a href="http://php.net/manual/en/book.image.php">php-gd</a>a> extension. So, make sure it is installed on your machine.
+This package relies on <a href="http://php.net/manual/en/book.image.php">php-gd</a> extension. So, make sure it is installed on your machine.
 
 # Installation
 Clone the repository-
