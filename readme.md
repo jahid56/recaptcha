@@ -33,6 +33,7 @@ Then, register keys for your site at https://www.google.com/recaptcha/admin
 Then Write your Secret and Site key in .ev file
 
 NOCAPTCHA_SECRET=[]
+
 NOCAPTCHA_SITEKEY=[]
 
 You are now Set to go.
