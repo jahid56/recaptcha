@@ -6,7 +6,7 @@ This package relies on <a href="http://php.net/manual/en/book.image.php">php-gd<
 
 Clone the repository-
 
-git clone https://github.com/jahid56/recaptcha.git
+git clone <p>https://github.com/jahid56/recaptcha.git</p>
 
 Then cd into the folder with this command-
 
