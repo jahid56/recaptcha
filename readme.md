@@ -1,27 +1,38 @@
-# Laravel PHP Framework
+# This package is compatible with Laravel 5.3
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+This package relies on <a href="http://php.net/manual/en/book.image.php">php-gd</a>a> extension. So, make sure it is installed on your machine.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+# Installation
+Clone the repository-
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+git clone https://github.com/jahid56/recaptcha.git
 
-## Official Documentation
+Then cd into the folder with this command-
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+cd recaptcha
+Then do a composer install
 
-## Contributing
+composer install
+Then create a environment file using this command-
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+cp .env.example .env
+Then edit .env file with appropriate credential for your database server. Just edit these two parameter(DB_USERNAME, DB_PASSWORD).
 
-## Security Vulnerabilities
+Then create a database named todos and then do a database migration using this command-
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+php artisan migrate
+Then change permission of storage folder using thins command-
 
-## License
+(sudo) chmod 777 -R storage
+At last generate application key, which will be used for password hashing, session and cookie encryption etc.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+php artisan key:generate
+
+Then, register keys for your site at https://www.google.com/recaptcha/admin
+
+Then Write your Secret and Site key in .ev file
+
+NOCAPTCHA_SECRET=[]
+NOCAPTCHA_SITEKEY=[]
+
+You are now Set to go.
