@@ -1,12 +1,12 @@
 # This package is compatible with Laravel 5.3
 
-This package relies on <a href="http://php.net/manual/en/book.image.php">php-gd</a> extension. So, make sure it is installed on your machine.
+This package relies on <a target="_blank" href="http://php.net/manual/en/book.image.php">php-gd</a> extension. So, make sure it is installed on your machine.
 
 # Installation Instruction
 
 Clone the repository-
 
-git clone <p>https://github.com/jahid56/recaptcha.git</p>
+git clone https://github.com/jahid56/recaptcha.git
 
 Then cd into the folder with this command-
 
